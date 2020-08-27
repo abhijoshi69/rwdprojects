@@ -1,0 +1,22 @@
+body
+{
+	font-family: arial;
+	color: #111111;
+}
+div#content
+{
+	background: #e3e3e3;
+	color: #ffff;
+	padding: 5%;
+	text-align: center;
+	border-radius:10px;
+}
+div#heading
+{
+	background: #3F51B5;
+	color: #ffff;
+	text-align: center;
+	font-size: 30pt;
+	padding:3%;
+	border-radius: 10px;
+}

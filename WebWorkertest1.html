@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Web Worker</title>
+</head>
+<body>
+	<input type="button" value="Loop" onclick="showLoop()" />
+	<input type="button" value="Hello" onclick="dispHello()"/>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+	<script type="text/javascript">
+		function showLoop()
+		{
+				if(Modernizr.webworkers)
+				{
+					var worker = new Worker('bigloop.js');
+					worker.onmessage = function(event){
+					alert("Completed "+event.data+" iterations");
+					};	
+				}	
+				elseṁ
+				{
+					alert("Web Workers not supported..");
+				}	
+		}
+		function dispHello()
+		{
+			alert("Hello..Rashmika Mandanna");
+		}
+
+	</script>
+</body>
+</html>

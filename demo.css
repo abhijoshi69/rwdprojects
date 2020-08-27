@@ -1,0 +1,26 @@
+		body{
+					color: #11111;
+					font-family: sans-serif;
+
+		}
+		/*This div will contain actual coding*/
+		div#demo
+		{
+			background: #00C853;
+			color: #004D;
+			border-radius: 10px;
+			margin: 5%;
+			padding: 5%;
+			text-align: center;
+		}
+		/*This div is used to display title of the page*/
+		div#heading
+		{
+			background:#607D8B;
+			color: #ffffff;
+			text-align: center;
+			font-size: 30pt;
+			padding: 10%;
+			border-radius: 10px;
+
+		}

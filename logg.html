@@ -1,0 +1,51 @@
+<html>
+<head>
+	<title>Login</title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js">
+	</script>
+	<script>
+		$('#b1').click(function(){
+			swal({
+				title: Successfully logged in
+				text: You have successfully logged in
+			})
+		})
+		.t1{
+			font-style: bold;
+			font-family: arial;
+
+		}
+
+	</script>
+</head>
+<body>
+	<form>
+		<table>
+			<tr>
+				<td class="t1">
+					Userid:
+				</td>
+				<td id="t2">
+					<input type="text" name="userid" placeholder="Enter your Userid">
+				</td>
+			</tr>
+			<tr>
+				<td id="t3">
+					Password:
+				</td>
+				<td id="t4">
+					<input type="password" name="password" placeholder="Enter your password">
+				</td>
+			</tr>
+			<tr>
+				<td id="t5">
+					<button id="b1">Submit</button>
+				</td>
+				<td id="t6">
+					<button type="clear">Clear</button>
+				</td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>

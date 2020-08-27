@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Button</title>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div id="page1" data-role="page">
+		<div data-role="main" class="ui-content">
+			<p>Submit Button Example</p>
+			<input  id="viewBtn" type="submit" value="Login" data-inline="true"/>
+			<p>Sample Text 2</p>
+			<div id="content"></div>
+			<button id="btn1" data-inline="true">View Content</button>
+			<div id="termsBtn"></div>
+		</div>
+		<p>Left Arrow</p>
+		<button id="ArrwLeft" data-inline="true" data-iconpos="top" data-icon="arrow-l"></button>
+				<p>Bars</p>
+		<button id="ArrwLeft" data-inline="true" data-icon="bars"></button>
+				<p>Grid</p>
+		<button id="ArrwLeft" data-inline="true" data-icon="grid"></button>
+				<p>Right Arrow</p>
+		<button id="ArrwLeft" data-inline="true" data-icon="arrow-r"></button>
+	</div>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#viewBtn").bind("click",function(event,ui){
+				var str="Hello Everyone";
+				$("#content").html(str);
+			})
+			$("#btn1").bind("click",function(event,ui){
+				var str = "<button id='AgreeBtn'>I agree to terms</button>";
+				$("#termsBtn").html(str);
+			})
+		});
+	</script>
+</body>
+</html>

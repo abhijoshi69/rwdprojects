@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Transition</title>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div id="page1" data-role="page">
+		<div data-role="main" class="ui-content">
+			<p><a href="#page2" data-transition="pop">Slide to Second Page</a></p>
+		</div>
+	</div>
+	<div id="page2" data-role="page">
+		<div data-role="main" class="ui-content">
+			<p><a href="#page1" data-transition="pop" data-direction="reverse">Slide Back to the First Page</a></p>
+		</div>
+	</div>
+</body>
+</html>

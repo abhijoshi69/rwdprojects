@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/knockout/3.2.0/knockout-debug.js"></script>
+	<style>
+		body
+		{
+			font-family: arial;
+			font-size: 14px;
+		}
+		.liveExample{
+			padding: 1em;background-color: #EEEEEDO; border: 1x solid #CCC;max-width: 655px;
+		}
+	</style>
+	<script>
+		$(document).ready(function (){
+			var myViewModel={
+				personName: 'Bob',
+				personAge: 12
+			};
+		
+		ko.applyBindings(myViewModel);
+		)};
+
+
+	</script>
+</head>
+<body>
+	<div class="liveExample">
+		The name is <span data-bind="text : personAge"></span><br>
+		The age is <span data-bind="text: personAge"</span>
+</body>
+</html>

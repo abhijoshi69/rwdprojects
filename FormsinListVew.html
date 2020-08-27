@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FormElementsinListview</title>
+			<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"/>
+		<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+	<div id="mypage" data-role="page">
+		<div data-role="main" class="ui-content">
+			<form id="jquerymform" action="formprocessor.aspx" method="post">
+				<ul data-role="listview" data-inset="true">
+					<li data-role="ui-field-contain">
+						<label for="name">Name:</label>
+						<input type="text" name="name" id="name" value=""/>
+					</li>
+					<li data-role="ui-field-contain">
+						<label for="slider1">Gender:</label>
+						<select name="slider1" id="slider1" data-role="slider">
+							<option value="male">Male</option>
+							<option value="female">Female</option>
+						</select>
+					</li>
+					<li data-role="ui-field-contain">
+						<label for="slider">Age:</label>
+						<input type="range" name="slider" id="slider" value="21" min="18" max="60">
+					</li>
+					<li>
+						<div><button type="submit" data-theme="a">Submit</button></div>
+					</li>
+				</ul>
+			</form>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+body
+{
+	font-family: arial;
+}
+div#heading
+{
+	text-align: center;
+	font-family: sans-serif;
+	color: #ffff;
+	background-color: #673AB7;
+	margin: 0;
+	padding: 10px;
+	border-radius: 10px;
+	font-size: 35px;
+}
+div#im
+{
+	float: left;
+	border-radius: 10px;
+
+}
+div#b1
+{
+	float: right;
+	width: 90px;
+	height: 35px;
+}
+div#u
+{
+	
+	margin: 0;
+	background: #333;
+	width: 20%;
+}
+div#l
+{	
+	margin: 0;
+	display: block;
+	padding: 14px 15px;
+	color: #fff;
+
+}
+div#f
+{
+	float: right;
+}
+

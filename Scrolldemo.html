@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Scroll Demo</title>
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+	<script>
+		$(document).on("pageinit",function(event)
+		{
+			var str="";
+			for(var i=0;i<50;i++)
+			{
+				str+=i+"<br/>";
+			}
+			$("#div1").html(str);
+		});
+	</script>
+</head>
+<body>
+	<div id="main" data-role="page">
+		<div data-role="main" class="ui-content">
+			<a href="#" id="scrolldownbtn" data-role="button" onclick="$.mobile.silentScroll(2000)">Scroll down</a>
+			<div id="div1"></div>
+			<a href="#" id="scrollupbtn" data-role="button" onclick="$.mobile.silentScroll(0)">Scroll up</a>
+		</div>
+	</div>
+</body>
+</html>

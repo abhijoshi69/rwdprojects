@@ -1,0 +1,26 @@
+body
+{
+	font-family: sans-serif;
+	color: #1111;
+}
+div#heading
+{
+	background: #009688;
+	color: #ffff;
+	padding:2%;
+	border-radius: 10px;
+	text-align: center;
+}
+div#c
+{
+	list-style-type: none;
+	margin:0;
+	padding:0;
+	overflow: hidden;
+	background-color: #333;
+}
+div#c1
+{
+	float:left;
+}
+

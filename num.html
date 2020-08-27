@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo</title>
+	<script type="text/javascript" src="https://code.angularjs.org/1.2.15/angular.min.js"></script>
+</head>
+<body style="background: #f5e799;font-family: Verdana;font-size: 16px;">
+	<div style="background: #e3e3e3;width: 60%;border-radius:10px;margin: auto;color: #424242" ng-app="" ng-init="Gross_Monthly_Sal='25000';Tax_Monthly_Deducts='300'">
+		<table>
+		<tr>
+			<td>Gross Monthly Salary:</td>
+			<td><input type="text" ng-model="Gross_Monthly_Sal"></td>
+		</tr>
+		<tr>
+			<td>Tax Deduction:</td>
+			<td><input type="text" ng-model="Tax_Monthly_Deducts"></td>
+		</tr>
+		</table>
+		<p style="text-align: center">Net Salary: {{Gross_Monthly_Sal - Tax_Monthly_Deducts}}</p>
+	</div>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Homepage</title>
+	<script src="jquery-2.1.4.js"></script>
+	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+	<div id="wrapper">
+		<button id="button-a">Sweet Alert</button>
+	</div>
+	<script>
+		$('#button-a').click(function()
+		{
+			swal({
+					title:"Confirmation",
+					text: "Are you Sure?",
+					button: {
+							 cancel: true,
+							 confirm: "Submit"
+					}
+				})
+		})
+	</script>
+</body>
+</html>
+
+			

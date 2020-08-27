@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery demo</title>
+	<style type="text/css">
+		body
+		{
+			font-family: sans-serif;
+		}
+		.changeStyle
+		{
+			box-shadow: 2px 5px red;
+
+		}
+	</style>
+</head>
+<body>
+
+	<button id="btn">Click Here!</button>
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function()
+		{
+			// $("#btn").click(function(e){
+			// 	alert("button clicked")
+			// 	console.log(e)
+			// });
+			// $("#btn").bind("click",function(){
+			// 	alert("Click event occured")
+			// });
+
+			// $("#btn").bind("mouseover mouseout",function(){
+			// 	$(this).toggleClass("changeStyle")
+			// });
+
+			$("#btn").bind("click",{message:"button clicked"},clickHandler);
+		});
+		function clickHandler(evt)
+		{
+			console.log(evt.data.message);
+		}
+	</script>
+</body>
+</html>

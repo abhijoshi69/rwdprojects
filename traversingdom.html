@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Traversing DOM</title>
+</head>
+<body>
+	<h1>Heading</h1>
+	<h3>Subtitle</h3>
+	<div id="container">
+		Sample Text in Div
+		<p id="p1">
+			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+			consequat.<span> Duis aute irure dolor in reprehenderit in voluptate velit esse
+			cillum dolore eu fugiat nulla pariatur.</span> Excepteur sint occaecat cupidatat non
+			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+		</p>
+		<p id="p2">
+		    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		    tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		    consequat.Duis aute irure dolor in reprehenderit in voluptate velit esse
+		    cillum dolore eu fugiat nulla pariatur.<span id="subPart"> Excepteur sint occaecat cupidatat non
+		    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</span>
+		</p>
+		<p id="p3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	</div>
+	<p id="p4">
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+	</p>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			// $("#subPart").parent().css({
+			// 	"font-style":"italic"
+			// });
+
+			// $("#container").children().css({
+			// 	"font-style":"italic"
+			// });
+
+			// $("#container").find("span").css({
+			// 	"font-style":"italic"
+			// });
+
+			//it will apply the style only to sibling of mentioned element
+			//and not the element
+			// $("#p1").siblings().css({
+			// 	"font-style":"italic"
+			// });
+
+			//it will apply the style only to next sibling of mentioned element and not all the siblings
+			// $("#p1").next().css({
+			// 	"font-style":"italic"
+			// });
+
+			//it will not apply the style to prev if the prev is container
+			//of mentioned element 
+			// $("#p2").prev().css({
+			// 	"font-style":"italic"
+			// });
+
+			// $("p").first().css({
+			// 	"font-style":"italic"
+			// });
+
+			// $("p").last().css({
+			// 	"font-style":"italic"
+			// });2
+
+			//it will access the element based on index 
+			//starting from 0 
+			// $("p").eq(2).css({
+			// 	"font-style":"italic"
+			// });
+
+			$("p").filter("#p2").css({
+				"font-style":"italic"
+			});
+		});
+	</script>
+</body>
+</html>

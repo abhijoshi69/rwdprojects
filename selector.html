@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Element Selector</title>
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+</head>
+<body>
+	<form>
+		<input type="text" name="userNm"/>
+		<input type="submit" id="Enter"/>
+	</form>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#Enter").click(function(){
+				var inputs = $('input');
+				alert(" "+"Thanks "+$(inputs[0]).val()+""+" for your feedback");
+			});
+		});
+	</script>
+</body>
+</html>

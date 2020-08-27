@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo</title>
+</head>
+<body>
+	<div style="background-color: pink">
+		<p>Click any paragraph to make it disappear.</p>
+		<button>Insert new element</button>
+	</div>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("button").click(function(){
+				$("<p>This is a new paragraph.</p>").insertAfter("button");
+				$("div").on("click","p",function(){
+					$(this).hide();
+				});
+			});
+		});
+	</script>
+</body>
+</html>

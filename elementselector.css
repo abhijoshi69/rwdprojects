@@ -1,0 +1,18 @@
+div~ul
+{
+	font-weight: bold;
+
+}
+p:first-of-type
+{
+	font-style: italic;
+}
+p:last-of-type
+{
+	text-decoration: underline;
+}
+p:nth-child(2)
+{
+	letter-spacing: 5pt;
+
+}

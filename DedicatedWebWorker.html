@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Dedicated Web Workers</title>
+</head>
+<body>
+	Enter your name: <input type="text" id="Ename" size="15">
+	<input type="button" value="Send" onclick="WebWorkerDemo()">
+	
+	<script type="text/javascript">
+		function WebWorkerDemo()
+		{
+		var val = document.getElementById("Ename").value;
+		workder_obj = new Worker("Web_Worker.js");
+		workder_obj.postMessage(val);
+		workder_obj.onmessage = function(event)
+		{
+			console.log(event.data);
+			document.getElementById("result").innerHTML+=event.data;
+		};
+		<p><output id="result"></output></p>
+	}
+	</script>
+</body>
+</html>
